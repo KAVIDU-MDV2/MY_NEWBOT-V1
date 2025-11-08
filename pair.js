@@ -2811,7 +2811,7 @@ END:VCARD`
 │ 💖 Owner: ${config.OWNER_NAME || 'KAVIDU'}
 │ 🌈 Version: ${config.BOT_VERSION || '0.0001+'}
 │ ☁️ Platform: ${process.env.PLATFORM || 'Heroku'}
-│ ⏳ Uptime: ${hours}h ${minutes}m ${seconds}s
+│ 
 ╰━━━━━━━━━━━━━━━━━━━━━━╯
 
 > © ${config.BOT_FOOTER || 'මෙතන හදාගනිම් bot name'}
