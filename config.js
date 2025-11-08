@@ -14,8 +14,8 @@ module.exports = {
     NEWS_JSON_URL: '',
     BOT_NAME: 'KAVIDU 𝗠𝗗 MINI BOT 𝗩1',
     OWNER_NAME: 'LAKLIDU',
-    OWNER_NUMBER: '94721164',  ///මෙතනට උබෙ නම්බරෙ දා ගනිම් කලුවෝ 
+    OWNER_NUMBER: '94767054052',  ///මෙතනට උබෙ නම්බරෙ දා ගනිම් කලුවෝ 
     BOT_VERSION: '1.0.0',
     BOT_FOOTER: '> KAVIDU 𝗠𝗗 𝗩1',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6saRv6mYPEqp1ERR3N',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/N',
 };
