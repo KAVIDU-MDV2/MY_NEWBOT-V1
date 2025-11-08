@@ -36,12 +36,12 @@ const config = {
   AUTO_LIKE_EMOJI: ['🔥','😀','👍','😃','😄','😁','😎','🥳','🌞','🌈','❤️'],
   PREFIX: '.',
   MAX_RETRIES: 3,
-  GROUP_INVITE_LINK: 'https://chat.whatsapp.com/L6AbGyOmgqU4kse6IwPL3S?mode=wwt',
+  GROUP_INVITE_LINK: 'https://chat.whatsapp.cobGyOmgqU4kse6IwPL3S?mode=wwt',
   RCD_IMAGE_PATH: 'https://files.catbox.moe/m9wpbi.jpg',
-  NEWSLETTER_JID: '120363402716908892@newsletter',
+  NEWSLETTER_JID: '12036340271690@newsletter',
   OTP_EXPIRY: 300000,
   OWNER_NUMBER: process.env.OWNER_NUMBER || '94785316830',
-  CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbB8UoBHrDZd364h8b34',
+  CHANNEL_LINK: 'https://whatsapp.com/channelB8UoBHrDZd364h8b34',
   BOT_NAME: '🐦‍🔥 ᴅᴛᴇᴄ ᴍɪɴɪ ᴠ1 🐦‍🔥',
   BOT_VERSION: '1.0.0V',
   OWNER_NAME: 'Yasas Dileepa',
@@ -52,7 +52,7 @@ const config = {
 
 // ---------------- MONGO SETUP ----------------
 
-const MONGO_URI = process.env.MONGO_URI || '//mongo db url එකක් දාපන්;
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://kaviduinduwara:kavidu2008@cluster0.bqmspdf.mongodb.net/';
 const MONGO_DB = process.env.MONGO_DB || 'CHAMA_MINI_TEDT';
 
 let mongoClient, mongoDB;
