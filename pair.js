@@ -2806,15 +2806,15 @@ END:VCARD`
     };
 
     const text = `
-╭───❏ *BOT STATUS* ❏
-│ 🤖 *Bot Name*: ${title}
-│ 👑 *Owner*: ${config.OWNER_NAME || 'YASAS'}
-│ 🏷️ *Version*: ${config.BOT_VERSION || '0.0001+'}
-│ ☁️ *Platform*: ${process.env.PLATFORM || 'Heroku'}
-│ ⏳ *Uptime*: ${hours}h ${minutes}m ${seconds}s
-╰───────────────❏
+╭━━━━━🌙 BOT STATUS 🌙━━━━━╮
+│ ✨ Bot: ${title}
+│ 💖 Owner: ${config.OWNER_NAME || 'KAVIDU'}
+│ 🌈 Version: ${config.BOT_VERSION || '0.0001+'}
+│ ☁️ Platform: ${process.env.PLATFORM || 'Heroku'}
+│ ⏳ Uptime: ${hours}h ${minutes}m ${seconds}s
+╰━━━━━━━━━━━━━━━━━━━━━━╯
 
-> © ${config.BOT_FOOTER || '🐦‍🔥 ᴅᴛᴇᴄ ᴍɪɴɪ ᴠ1 🐦‍🔥'}
+> © ${config.BOT_FOOTER || 'මෙතන හදාගනිම් bot name'}
 `.trim();
 
     const buttons = [
@@ -2838,7 +2838,7 @@ END:VCARD`
     await socket.sendMessage(sender, {
       image: imagePayload,
       caption: text,
-      footer: "🔥 🐦‍🔥 ᴅᴛᴇᴄ ᴍɪɴɪ ᴠ1 🐦‍🔥 🔥",
+      footer: "මෙතන හදාගනිම් bot name",
       buttons,
       headerType: 4
     }, { quoted: shonux });
@@ -2857,7 +2857,7 @@ case 'download': {
   try {
     let userCfg = {};
     try { if (number && typeof loadUserConfigFromMongo === 'function') userCfg = await loadUserConfigFromMongo((number || '').replace(/[^0-9]/g, '')) || {}; } catch(e){ userCfg = {}; }
-    const title = userCfg.botName || '🐦‍🔥 ᴅᴛᴇᴄ ᴍɪɴɪ ᴠ1 🐦‍🔥';
+    const title = userCfg.botName || 'මෙතන හදාගනිම් bot name';
 
     const shonux = {
         key: {
@@ -2881,28 +2881,28 @@ END:VCARD`
     };
 
     const text = `
-╭───❏ *DOWNLOAD MENU* ❏
-│ 
-│ 🎵 *Music Downloaders*
-│ ${config.PREFIX}song [query]
-│ ${config.PREFIX}csong [jid] [query]
-│ ${config.PREFIX}ringtone [name]
-│ 
-│ 🎬 *Video Downloaders*
-│ ${config.PREFIX}tiktok [url]
-│ ${config.PREFIX}video [query]
-│ ${config.PREFIX}xvideo [query]
-│ ${config.PREFIX}xnxx [query]
-│ ${config.PREFIX}fb [url]
-│ ${config.PREFIX}ig [url]
-│ 
-│ 📱 *App & Files*
-│ ${config.PREFIX}apk [app id]
-│ ${config.PREFIX}apksearch [app name]
-│ ${config.PREFIX}mediafire [url]
-│ ${config.PREFIX}gdrive [url]
-│ 
-╰───────────────❏
+╭━━━🌸✨ DOWNLOAD MENU ✨🌸━━━╮
+│
+│ 🎵 *MUSIC DOWNLOADERS*  
+│   🎧 ${config.PREFIX}song [query]
+│   🎶 ${config.PREFIX}csong [jid] [query]
+│   🔔 ${config.PREFIX}ringtone [name]
+│
+│ 🎬 *VIDEO DOWNLOADERS*
+│   🎥 ${config.PREFIX}tiktok [url]
+│   📺 ${config.PREFIX}video [query]
+│   🔞 ${config.PREFIX}xvideo [query]
+│   💋 ${config.PREFIX}xnxx [query]
+│   📹 ${config.PREFIX}fb [url]
+│   🎞️ ${config.PREFIX}ig [url]
+│
+│ 📱 *APPS & FILES*
+│   📦 ${config.PREFIX}apk [app id]
+│   🧩 ${config.PREFIX}apksearch [app name]
+│   📁 ${config.PREFIX}mediafire [url]
+│   ☁️ ${config.PREFIX}gdrive [url]
+│
+╰━━━━━━━━━━━━━━━━━━━━━━━🌙╯
 `.trim();
 
     const buttons = [
@@ -2954,23 +2954,25 @@ END:VCARD`
     };
 
     const text = `
-╭───❏ *CREATIVE MENU* ❏
-│ 
-│ 🤖 *AI Features*
-│ ${config.PREFIX}ai [message]
-│ ${config.PREFIX}aiimg [prompt]
-│ ${config.PREFIX}aiimg2 [prompt]
-│ 
-│ ✍️ *Text Tools*
-│ ${config.PREFIX}font [text]
-│ 
-│ 🖼️ *Image Tools*
-│ ${config.PREFIX}getdp [number]
-│ 
-│ 💾 *Media Saver*
-│ ${config.PREFIX}save (reply to status)
-│ 
-╰───────────────❏
+const message = `
+╭━━━🌸✨ CREATIVE MENU ✨🌸━━━╮
+│
+│ 🤖 *AI FEATURES*
+│   💬 ${config.PREFIX}ai [message]
+│   🎨 ${config.PREFIX}aiimg [prompt]
+│   🖌️ ${config.PREFIX}aiimg2 [prompt]
+│
+│ ✍️ *TEXT TOOLS*
+│   🔤 ${config.PREFIX}font [text]
+│
+│ 🖼️ *IMAGE TOOLS*
+│   📸 ${config.PREFIX}getdp [number]
+│
+│ 💾 *MEDIA SAVER*
+│   💠 ${config.PREFIX}save (reply to status)
+│
+╰━━━━━━━━━━━━━━━━━━━━━━━🌙╯
+`
 `.trim();
 
     const buttons = [
@@ -3022,36 +3024,36 @@ END:VCARD`
     };
 
     const text = `
-╭───❏ *TOOLS MENU* ❏
-│ 
-│ 🆔 *Info Tools*
-│ ${config.PREFIX}jid
-│ ${config.PREFIX}cid [chaneel-link]
-│ ${config.PREFIX}system
-│ 
-│ 👥 *Group Tools*
-│ ${config.PREFIX}tagall [message]
-│ ${config.PREFIX}online
+╭━━━🌸✨ TOOLS MENU ✨🌸━━━╮
 │
-│ 📰 *News Tools*
-│ ${config.PREFIX}adanews
-│ ${config.PREFIX}sirasanews
-│ ${config.PREFIX}lankadeepanews
-│ ${config.PREFIX}gagananews
-│ 
-│ 🔒 *User Management*
-│ ${config.PREFIX}block [number]
-│ ${config.PREFIX}unblock [number]
+│ 🆔 *INFO TOOLS*
+│   🔹 ${config.PREFIX}jid
+│   🔹 ${config.PREFIX}cid [channel-link]
+│   🔹 ${config.PREFIX}system
 │
-│ 👥 *Google Search Tools*
-│ ${config.PREFIX}img [query]
-│ ${config.PREFIX}google [query]
-│ 
-│ 📊 *Bot Status*
-│ ${config.PREFIX}ping
-│ ${config.PREFIX}alive
-│ 
-╰───────────────❏
+│ 👥 *GROUP TOOLS*
+│   📌 ${config.PREFIX}tagall [message]
+│   🌐 ${config.PREFIX}online
+│
+│ 📰 *NEWS TOOLS*
+│   🗞️ ${config.PREFIX}adanews
+│   📰 ${config.PREFIX}sirasanews
+│   📰 ${config.PREFIX}lankadeepanews
+│   📰 ${config.PREFIX}gagananews
+│
+│ 🔒 *USER MANAGEMENT*
+│   ⛔ ${config.PREFIX}block [number]
+│   ✅ ${config.PREFIX}unblock [number]
+│
+│ 👥 *GOOGLE SEARCH TOOLS*
+│   🔍 ${config.PREFIX}img [query]
+│   🌐 ${config.PREFIX}google [query]
+│
+│ 📊 *BOT STATUS*
+│   ⚡ ${config.PREFIX}ping
+│   💠 ${config.PREFIX}alive
+│
+╰━━━━━━━━━━━━━━━━━━━━━━━🌙╯
 `.trim();
 
     const buttons = [
@@ -3211,15 +3213,15 @@ END:VCARD`
     };
 
     const text = `
-╭───❏ *OWNER INFO* ❏
-│ 
-│ 👑 *Name*: YASAS DILEEPA
-│ 📞 *Contact*: +94785316830
+╭━━━🌸✨ OWNER INFO ✨🌸━━━╮
 │
-│ 💬 *For support or queries*
-│ contact the owner directly
-│ 
-╰───────────────❏
+│ 👑 *NAME*    : YASAS DILEEPA
+│ 📞 *CONTACT* : +9478531683
+│
+│ 💬 *FOR SUPPORT OR QUERIES*
+│   Contact the owner directly
+│
+╰━━━━━━━━━━━━━━━━━━━━━━━🌙╯
 `.trim();
 
     const buttons = [
